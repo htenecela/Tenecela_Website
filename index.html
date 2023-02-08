@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Henry Tenecela</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/00fbcf9721.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/cornelllogo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experiences">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Mechanical Engineer </p>
+                <h1> Hi, I'm <span>Henry Tenecela</span> <br> </h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutme.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I was born in Nyack, NY. At the age of 7, I flew to Ecuador with my family and finished my
+                        education up to
+                        high school. Shortly after graduating I decided to pursue my college education back in the US.
+                        I started at Monroe Community College in Rochester, NY. Upon graduation, I transferred to
+                        Cornell University to
+                        continue my engineering studies. I am currently finishing my Master's of Engineering in
+                        Mechanical Engineering.
+
+                        My motivation to pursue engineering dates to my senior year in high school. I
+                        was part of the IB program, and as a member I got the opportunity to travel around cities and
+                        towns helping underserved communities
+                        and assisting them with their basic needs. It was quite shocking that living conditions in
+                        these communities were not the best, and education was rarely heard of. Ever since I graduated
+                        from
+                        high school and traveled to the US, I have aimed to gain experience in the engineering field to
+                        one day come back and provide strategic plans to improve living conditions through housing and
+                        educational technology.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>MATLAB, LabVIEW, C++, Python, Java, HTML, CSS</li>
+                            <br>
+                            <li><span>Technical</span><br>SolidWorks, Fusion360, ANSYS, AutoCAD, SketchUp, Adobe</li>
+                            <br>
+                            <li><span>Professional</span><br>English (fluent), Spanish (fluent), Communication,
+                                Leadership, Lesson Management, Time Management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Wolfspeed - Durham NC</span><br>Mechanical Engineering Intern</li>
+                            <br>
+                            <li><span>Bewley Applied Turbulence Lab - Ithaca, NY</span><br>Undergraduate Researcher</li>
+                            <br>
+                            <li><span>Steiner Technologies - Rochester, NY</span><br>Manufacturing and Design Engineer
+                                Intern</li>
+                            <br>
+                            <li><span>Engineering and Technology Center - Rochester, NY</span><br>CAD Student Aide</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Cornell University (2022-2023)</span><br>M.Eng. Mechanical Engineering; GPA: 4.06
+                            </li>
+                            <br>
+                            <li><span>Cornell University (2020-2022)</span><br>B.S. Civil Engineering; GPA: 3.5</li>
+                            <br>
+                            <li><span>Monroe Community College (2018-2020)</span><br>A.S. Engineering Science; GPA: 3.78
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!------------experience------------------>
+    <div id="experiences">
+        <div class="container">
+            <h1 class="sub-title">Experience</h1>
+            <div class="experiences-list">
+                <div class="work">
+                    <img src="images/cornellmae.png">
+                    <div class="layer">
+                        <h3>Undergraduate Researcher</h3>
+                        <p> September 2022 - August 2022</p>
+                        <a href="#experiences"><i class="fa-solid fa-circle-plus"
+                                onclick="togglePopup('popup-1')"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/steiner.png">
+                    <div class="layer">
+                        <h3>Manufacturing and Design Engineer Intern</h3>
+                        <p> May 2022 - August 2022</p>
+                        <a href="#experiences"><i class="fa-solid fa-circle-plus"
+                                onclick="togglePopup('popup-2')"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/wolfspeed.png">
+                    <div class="layer">
+                        <h3>Mechanical Engineering Intern</h3>
+                        <p> May 2021 - August 2021</p>
+                        <a href="#experiences"><i class="fa-solid fa-circle-plus"
+                                onclick="togglePopup('popup-3')"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/mcc.jpeg">
+                    <div class="layer">
+                        <h3>CAD Student Aide </h3>
+                        <p> January 2020 - July 2020</p>
+                        <a href="#experiences"><i class="fa-solid fa-circle-plus"
+                                onclick="togglePopup('popup-4')"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/cstep.png">
+                    <div class="layer">
+                        <h3>Science/Engineering Tutor</h3>
+                        <p> January 2019 - June 2019</p>
+                        <a href="#experiences"><i class="fa-solid fa-circle-plus"
+                                onclick="togglePopup('popup-5')"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!--POP UPSSS-->
+
+    <div class="popups" id="popup-1">
+        <div class="overlay"></div>
+        <div class="contenido">
+            <div class="close-btn" onclick="togglePopup('popup-1')">&times;</div>
+            <h1 class="sub-title">Undergraduate Researcher at Bewley Applied Turbulence Lab</h1>
+            <h1 class="popup_subtitle">Objective</h1>
+            <p>
+                Set up and analyzed wind turbulence in the wake of a cylinder
+                utilizing hotwires by visualizing voltage behavior with varying fan
+                frequencies to obtain vortex shedding frequencies. In addition, I conducted drone testing
+                to observe its behavior while undergoing turbulence in the wind tunnel.
+            </p>
+            <p>Below is an image of the wind tunnel</p>
+            <img src="images/wind_tunnel.JPG">
+            <h1 class="popup_subtitle">Approach/Technical Details</h1>
+            <ul>
+                <li>
+                    Constructed an experimental setup in a wind tunnel to analyze flow
+                    in the wake of a 1-, 2-, and 3-inch diameter cylinder.
+                </li>
+                <li>
+                    Manufactured hot-wires and handled pressure transducers,
+                    voltmeters, and vessels.
+                </li>
+                <li>
+                    Redesigned existing Arduino program to analyze collected wind
+                    speed and voltage data from the wind tunnel.
+                </li>
+                <li>
+                    Analyzed results by applying a Fast Fourier Transform algorithm
+                    programmed in MATLAB to visualize vortex shedding frequencies.
+                </li>
+                <li>
+                    Communicated progress via weekly meetings with PhD candidate
+                    and submitted summary reports to the laboratory director.
+                </li>
+                <li>
+                    Conducted drone testing by having them hover in the wind tunnel while undergoing turbulent
+                    conditions.
+                </li>
+                <h1 class="popup_subtitle">Results</h1>
+                <ul>
+                    <li>
+                        Visualized vortex shedding frequencies for fan frequencies of 10,
+                        13, 15 and 19 Hz respectively.
+                    </li>
+                    <li>
+                        Found wind speeds associated with fan frequency and voltage
+                        readings over time.
+                    </li>
+                    <li>
+                        Ensured calibration of hotwire for future drone applications.
+                    </li>
+                    <li>
+                        Recorded voltage variations in drones linked directly to battery consumption.
+                    </li>
+                </ul>
+                <h1 class="popup_subtitle">Video of Drone Hovering in Wind Tunnel</h1>
+                <p>
+                    Below is a video of a drone called "Pidgeon" hovering in the wind tunnel with a fan frequency
+                    equivalent to 15 Hz.
+                </p>
+                <video width="500px" height="500px" controls autoplay muted loop>
+                    <source src="images/dronehover.MOV" type="video/mp4">
+                </video>
+
+        </div>
+    </div>
+
+    <div class="popups" id="popup-2">
+        <div class="overlay"></div>
+        <div class="contenido">
+            <div class="close-btn" onclick="togglePopup('popup-2')">&times;</div>
+            <h1 class="sub-title">Design and Manufacturing Engineer Intern at Steiner Technologies</h1>
+            <h1 class="popup_subtitle">Objective</h1>
+            <p>
+                Design custom-ordered tool parts in SolidWorks, proceed to program
+                macros in CNC machines and manufacture quantity of parts needed
+                for completion of the order on time for delivery.
+            </p>
+            <p>Below is an image of myself unloading cutter blades</p>
+            <img src="images/unloading_blades.png">
+            <h1 class="popup_subtitle">Approach/Technical Details</h1>
+            <ul>
+                <li>
+                    Setup and ran CNC Mill with rotary 4th axis and CNC Mill-
+                    turn with B-axis.
+                </li>
+                <li>
+                    Checked work using specialized measurement fixtures and
+                    micrometers according to print tolerances.
+                </li>
+                <li>
+                    Scheduled and distributed job travelers to the manufacturing
+                    floor to ensure on time delivery for customers.
+                </li>
+                <li>
+                    Designed and built prototypes utilizing SolidWorks for
+                    possible new business ventures in the energy storage field.
+                </li>
+                <li>
+                    Worked alongside sales manager to gain knowledge in areas of
+                    sales, finances and management.
+                </li>
+                <h1 class="popup_subtitle">Results</h1>
+                <ul>
+                    <li>
+                        • Led completion of 10+ aluminum custom-made cutter blade parts.
+                    </li>
+                    <li>
+                        Improved customer's cycle time per project by 60 percent.
+                    </li>
+                    <li>
+                        Gained experience utilizing CAD software, CNC machinery and in business related areas of the
+                        company.
+                    </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class="popups" id="popup-3">
+        <div class="overlay"></div>
+        <div class="contenido">
+            <div class="close-btn" onclick="togglePopup('popup-3')">&times;</div>
+            <h1 class="sub-title">Mechanical Engineering Intern at Wolfspeed</h1>
+            <h1 class="popup_subtitle">Objective</h1>
+            <p>
+                Designed a GUI using Java programming language to enable workers to test
+                Rth and Ampacity values in MOSFETs without the need of conducting these tests in laboratories.
+                In addition, I also assisted the team by performing CAD redesigns on MOSFETs to later undergo thermo
+                analysis utilizing ANSYS
+                to inspect heat dissipation.
+            </p>
+            <p>MOSFETs are a type of transistor and its applications include almost all electronic applicances. It is
+                extensively used in radio frequency and EV applications.
+            </p>
+            <img src="images/wolfspeedlocation.png">
+            <h1 class="popup_subtitle">Approach/Technical Details</h1>
+            <ul>
+                <li>
+                    Designed a Graphical User Interface using Java to optimize Ampacity and Thermal Resistance values in
+                    MOSFETs.
+                </li>
+                <li>
+                    Redesigned packages for MOSFETs in SolidWorks and conducted a thermal analysis simulation for these
+                    CAD models in ANSYS.
+                </li>
+                <li>
+                    Directed a dimensional analysis test on MOSFETs using a Keyence microscope to compare to those
+                    conducted by a third party vendor.
+                </li>
+                <h1 class="popup_subtitle">Results</h1>
+                <ul>
+                    <li>
+                        Completely designed and interactive GUI for users to test different die position in MOSFETs and
+                        visualize with precision values of Rth and Ampacity.
+                    </li>
+                    <li>
+                        Helped the team save up to 70% in time by utilizng a GUI system instead of conducting testing in
+                        a laboratory.
+                    </li>
+                    <li>
+                        Gained experience utilizing SolidWorks and ANSYS software by redesigning existing MOSFETs and
+                        applying thermo-analysis.
+                    </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class="popups" id="popup-4">
+        <div class="overlay"></div>
+        <div class="contenido">
+            <div class="close-btn" onclick="togglePopup('popup-4')">&times;</div>
+            <h1 class="sub-title">CAD Student Aide at Technology Center in MCC</h1>
+            <h1 class="popup_subtitle">Objective</h1>
+            <p>
+                Shortly after concluding my engineering prototyping class, I wanted to find a way to
+                put the skills learned in practice. At that time, I had a good understanding of SolidWorks
+                and its applications.
+            </p>
+            <p>
+                I applied for a job on campus at the Student Technology Center Lab in MCC. I found this to be a great
+                experience to enhance my CAD skills and also to help students out!
+            </p>
+            <img src="images/mccsign.png">
+            <h1 class="popup_subtitle">Responsibilities:</h1>
+            <ul>
+                <li>
+                    Assisted 20+ students by troubleshooting design issues when completing assignments in SolidWorks.
+                </li>
+                <li>
+                    Provided assistance in English and Spanish depending on students needs.
+                </li>
+                <li>
+                    Managed the computer lab by ensuring all electronic devices were safely handled and shut down when
+                    not in use.
+                </li>
+        </div>
+    </div>
+
+    <div class="popups" id="popup-5">
+        <div class="overlay"></div>
+        <div class="contenido">
+            <div class="close-btn" onclick="togglePopup('popup-5')">&times;</div>
+            <h1 class="sub-title">Science/Engineering Tutor</h1>
+            <h1 class="popup_subtitle">Objective</h1>
+            <p>
+                I have always enjoyed motivating and being able to help the future generation of professionals. I was
+                able
+                to work at a charter school in the city of Rochester, NY. Here, I would assist students in any
+                assignment they would have.
+                Primarily science and math related assignments.
+            </p>
+            <img src="images/charterschool.jpg">
+            <p>
+                I was also able to attend school programs and spend time with teachers and students. It was great being
+                part of such a great community and
+                knowing I was able to help out!
+            </p>
+
+
+        </div>
+    </div>
+
+    <!------------projects------------------>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="projects-list">
+                <div class="proyecto">
+                    <img src="images/drone.png">
+                    <div class="layer">
+                        <h3>Unmanned Aerial and Ground Vehicle</h3>
+                        <p>Designed and Wired a Drone and Car</p>
+                        <a href="#projects"><i class="fa-solid fa-circle-plus"
+                                onclick="togglePopup('popup-6')"></i></i></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/car.png">
+                    <div class="layer">
+                        <h3>Autonomous Ground Vehicle</h3>
+                        <p>Designed, Manufactured and Wired an Autonomous Car</p>
+                        <a href="#projects"><i class="fa-solid fa-circle-plus" onclick="togglePopup('popup-7')"></i></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/covid.png">
+                    <div class="layer">
+                        <h3>COVID-19 Programming Project</h3>
+                        <p> Created a real time map of Covid Cases throughout Ecuador</p>
+                        <a href="#projects"><i class="fa-solid fa-circle-plus"
+                                onclick="togglePopup('popup-8')"></i></i></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/animatronic.jpg">
+                    <div class="layer">
+                        <h3>Animatronic Hand</h3>
+                        <p> Built an Animatronic Hand!</p>
+                        <a href="#projects"><i class="fa-solid fa-circle-plus"
+                                onclick="togglePopup('popup-9')"></i></i></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/pappenheim.jpg">
+                    <div class="layer">
+                        <h3>Pappenheim Chamber Wheel Mechanism</h3>
+                        <p> Designed a Releauxe Machine using Fusion 360!</p>
+                        <a href="#projects"><i class="fa-solid fa-circle-plus"
+                                onclick="togglePopup('popup-10')"></i></i></a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="images/webdev.jpg">
+                    <div class="layer">
+                        <h3>Website Design!</h3>
+                        <p> Designed a Personal Website from scratch!</p>
+                        <a href="#projects"><i class="fa-solid fa-circle-plus"
+                                onclick="togglePopup('popup-11')"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------POPUPS for PROJECTS------>
+    <div class="popups" id="popup-6">
+        <div class="overlay"></div>
+        <div class="contenido">
+            <div class="close-btn" onclick="togglePopup('popup-6')">&times;</div>
+            <h1 class="sub-title">Autonomous UAV and UGV System</h1>
+            <h1 class="popup_subtitle">Objective</h1>
+            <p>
+                Manufacture, design and wire an unmanned aerial vehicle (UAV) capable of
+                carrying an unmanned ground vehicle (UGV) across an obstacle course,
+                which then would be dropped after light sensors activate for the UGV to
+                follow a straight path to the finish line.
+            </p>
+            <p>Below is an image of the UAV and UGV system prior to flight</p>
+            <img src="images/uavuvg.png">
+            <h1 class="popup_subtitle">Approach/Technical Details</h1>
+            <ul>
+                <li>
+                    Managed a team of four undergraduate students by determining
+                    and distributing technical roles and scheduling weekly
+                    meetings.
+                </li>
+                <li>
+                    Used Betaflight and Cleanflight for PID tuning and to
+                    command the drone.
+                </li>
+                <li>
+                    Solder all wires and connections to respective flight controller
+                    and power distribution boards (PDB).
+                </li>
+                <h1 class="popup_subtitle">Results</h1>
+                <ul>
+                    <li>
+                        UAV was able to carry the UGV across the course and successfully complete all tasks.
+
+                    </li>
+                    <li>
+                        UGV activated light sensor and detached itself from the
+                        UAV to follow a straight path using a QTR-8-IR light
+                        sensor.
+                    </li>
+                </ul>
+                <h1 class="popup_subtitle">Schematic Wiring for UGV and UAV</h1>
+                <h1 class="popup_subtitle">Schematic Wiring of a UGV</h1>
+                <p>Schematic wiring of circuit boards, motors, battery, and color sensor for UGV </p>
+                <img src="images/ugvwires.png">
+                <h1 class="popup_subtitle">Schematic Wiring of a UAV</h1>
+                <p>Schematic wiring of ESC's, flight controller, receivers, batteries, PDB, and motors for UAV</p>
+                <img src="images/uavwires.png">
+
+        </div>
+    </div>
+
+    <div class="popups" id="popup-7">
+        <div class="overlay"></div>
+        <div class="contenido">
+            <div class="close-btn" onclick="togglePopup('popup-7')">&times;</div>
+            <h1 class="sub-title">Autonomous Ground Vehicle</h1>
+            <h1 class="popup_subtitle">Objective</h1>
+            <p>
+                Manufacture and design mechanical car body parts for an
+                autonomous vehicle in SolidWorks capable of circling around an
+                oval track and pulling the most weight attached to its rear end.
+            </p>
+            <p>Below is an image of myself unloading cutter blades</p>
+            <img src="images/carcad.png">
+            <h1 class="popup_subtitle">Approach/Technical Details</h1>
+            <ul>
+                <li>
+                    Designed chassis plate, steering arms, wheel mounts, steering
+                    rod, brackets and wheels utilizing SolidWorks.
+                </li>
+                <li>
+                    Manufactured all designed parts in a CNC machine laboratory
+                    with aluminum material and plastic for the wheels.
+                </li>
+                <li>
+                    Designed and 3D printed the car body for aesthetic
+                    enhancement.
+                </li>
+                <li>
+                    Assembled all components and added servo motors, gears, and
+                    line sensors to the vehicle.
+                </li>
+                <li>
+                    Coordinated and discussed approach for maximizing efficiency
+                    of the vehicle in completing objectives stated.
+                </li>
+                <h1 class="popup_subtitle">Results</h1>
+                <ul>
+                    <li>
+                        Autonomous vehicle navigated successfully around the
+                        oval track by making use of a line sensor attached to
+                        bottom of the chassis plate.
+                    </li>
+                    <li>
+                        The vehicle was able to pull 1200g of weight hanging from
+                        the edge of a table and tied to the rear end of the vehicle.
+                    </li>
+                </ul>
+                <h1 class="popup_subtitle">Examples of CAD Exploded Views</h1>
+                <h1 class="popup_subtitle">Exploded View of Steering ASM</h1>
+                <img src="images/steeringasm.png">
+                <h1 class="popup_subtitle">Exploded View of Rear Axle ASM</h1>
+                <img src="images/rearaxle.png">
+        </div>
+    </div>
+
+    <div class="popups" id="popup-8">
+        <div class="overlay"></div>
+        <div class="contenido">
+            <div class="close-btn" onclick="togglePopup('popup-8')">&times;</div>
+            <h1 class="sub-title">Covid-19 Programming Project</h1>
+            <h1 class="popup_subtitle">Objective</h1>
+            <p>
+                Displayed a geographical data map of Chimborazo (province located in
+                Ecuador) in MATLAB that would display colored dots (green, yellow,
+                and red) depending on the severity of Covid-19 cases in each town.
+                Also, plot information to understand and analyze Covid-19 cases across
+                time.
+            </p>
+            <p>Following the rise of Covid-19 cases around the world I saw an
+                opportunity to create a user-friendly program in MATLAB to help
+                habitants in my hometown have a better understanding and image of
+                what towns within the province need to be avoided due to severity of
+                Covid-19 cases.
+            </p>
+
+            <p>I was recognized and interviewed by a local news channel in Rochester, NY. Follow this <a
+                    href="https://www.rochesterfirst.com/coronavirus/mcc-graduate-creates-covid-19-tracker-in-chimborazo-ecuador/">link</a>
+                to read the news
+                section! </p>
+
+            <img src="images/covidchimborazo.jpg">
+            <h1 class="popup_subtitle">Approach/Technical Details</h1>
+            <ul>
+                <li>
+                    Coded a program utilizing MATLAB capable of providing
+                    updated information regarding Covid-19 cases and severity
+                    across Chimborazo province in Ecuador.
+
+                </li>
+                <li>
+                    Used an information box to explain technical aspects of the
+                    figures that are outputted.
+                </li>
+                <h1 class="popup_subtitle">Results</h1>
+                <ul>
+                    <li>
+                        Displayed a geographical map of Chimborazo showing severity
+                        of Covid-19 cases with green, yellow and red dots to prevent
+                        people from traveling to specified towns.
+                    </li>
+                    <li>
+                        Allow user to input data in MATLAB and provide updated
+                        information to people in Ecuador.
+
+                    </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class="popups" id="popup-9">
+        <div class="overlay"></div>
+        <div class="contenido">
+            <div class="close-btn" onclick="togglePopup('popup-9')">&times;</div>
+            <h1 class="sub-title">Animatronic Hand</h1>
+            <h1 class="popup_subtitle">Objective</h1>
+            <p>
+                Utilized a Raspberry Pi Pico with several servo motors to control an
+                Animatronic Hand. Specifically, we used these motors actuated by flex sensors
+                to control the fingers of an Animatronic Hand. These flex sensors were attached
+                to fingers on a glove enabling any user to wear this glove and actuate the
+                animatronic hand by fexing their fingers. Below an image showing this.
+            </p>
+
+            <p>To view our presentation posted on YouTube please click on this following <a
+                    href="https://www.youtube.com/watch?v=VCVm2Jst4cQ&list=PLDqMkB5cbBA6AwYC_DElkDStUdOsTuIL7&index=11">link</a>
+            </p>
+            <p>To view the final report for this project please click on this following <a
+                    href="https://ece4760.github.io/Projects/Fall2022/zw543_yz2979_hft9/Main.html">link</a>
+            </p>
+
+
+            <img src="images/animatronic2.jpg">
+            <h1 class="popup_subtitle">Software Design</h1>
+            <ul>
+                <p>
+                    Our main goal was to first read from the ADC pins of the Pi Pico to get
+                    the current voltage across the flex sensors. Then, we used linear mapping form
+                    voltage to PWM, to then send this PWM signal to the servo motor. Since these PWM signals
+                    control the rotational position of the servos, we can adjust the servo position using the flex
+                    sensors.
+                    A logical structure for the software implementation is shown below.
+                </p>
+                <img src="images/softwareimplementation.jpg">
+
+                <h1 class="popup_subtitle">Hardware Design</h1>
+                <ul>
+                    <p>
+                        We used cardboard, straws, and strings to build the animatronic hand. We traced our hands on
+                        the cardboard, then cut out the pattern with scissors. We hinged the finger joints with the
+                        help of a knife to give a natural curl to the fingers. We attached one edge of the string to
+                        the tip of the finger and the other to the servo motors. This setup will enable the fingers
+                        to curl when the servo motor is activated. The straws helped us create a channel that would
+                        later be used to feed the strings through. A better picture of the
+                        setup is illustrated below.
+                    </p>
+                    <img src="images/animatronichand.jpg">
+
+
+                    <h1 class="popup_subtitle">Results</h1>
+                    <ul>
+                        <li>
+                            The results of this project met our expectations. We successfully controlled our
+                            custom-made
+                            mechatronic hand with three flex sensors. We were able to perform simple gestures on the
+                            mechatronic hands with the movement of our fingers. Because of linear mapping and
+                            threshold
+                            in our software, we could precisely control each fingers degree of movement.
+                            The only setback of this project is that we only had three ADC pins on the Pi Pico, and
+                            consequently we were able to only use three flex sensors.
+                            If we want to make improvements, we could use a
+                            microcontroller with five usable ADC pins so that each finger can control corresponding
+                            fingers on the mechatronic hand. The other improvement we might want is to make this
+                            control wireless so that we can control the mechatronic hand in different locations.
+
+                        </li>
+                    </ul>
+        </div>
+    </div>
+
+    <div class="popups" id="popup-10">
+        <div class="overlay"></div>
+        <div class="contenido">
+            <div class="close-btn" onclick="togglePopup('popup-10')">&times;</div>
+            <h1 class="sub-title">Pappenheim Chamber Wheel Mechanism</h1>
+            <h1 class="popup_subtitle">Objective</h1>
+            <p>
+                As a design project we were assigned to choose a Reuleaux Machine from an online gallery. We
+                would then observe this machine
+                and all its components. Using our understanding of basic mechanics, we had to figure out how
+                such machine worked and all components
+                interacted. Finally, we would use Fusion 360 to design an accurate representation of chosen
+                Reuleaux Machine. I chose the "Pappenheim Chamber
+                Wheel Mechanism" which was manufactured by Gustave Voigt Werkstatt and
+                designed by Reuleaux Franz.
+            </p>
+            <h1 class="popup_subtitle">About the Pappenheim Chamber Wheel Mechanism</h1>
+            <p>
+                This machine is the oldest form of chamber-wheel-gear, and the forerunner of modern gear pumps.
+                The fluid that travels through the mechanism is delivered in a continuous stream. The volume of
+                the flow per revolution is about equal to the annular space between the point and root
+                cylinders.
+                The mechanism can serve as both a pump and a motor. When water flows through the top entrance
+                of the machine, the interlocked wheels can serve as a motor. On the other hand, when making use
+                of the handle, it could allow the device to deliver fluids with constant volumetric flow. Below
+                an image.
+
+            </p>
+            <img src="images/pappenheim2.jpg">
+            <h1 class="popup_subtitle">CAD Render of the Mechanism</h1>
+            <ul>
+                <p>
+                    Below is a Render of the completed CAD version of the Pappenheim Chamber Wheel Mechanism
+                    observed above.
+                </p>
+                <img src="images/releauxe_machine.jpg">
+
+                <h1 class="popup_subtitle">CAD Video Render of Wheel Chamber</h1>
+
+
+                <video width="500px" height="500px" controls autoplay muted loop>
+                    <source src="images/pappenheimvideo.mp4" type="video/mp4">
+                </video>
+
+                <h1 class="popup_subtitle">CAD Video Render of Exploded View of Mechanism</h1>
+
+                <video width="500px" height="500px" controls autoplay muted loop>
+                    <source src="images/explodedviewanimation.mp4" type="video/mp4">
+                </video>
+        </div>
+    </div>
+
+
+    <div class="popups" id="popup-11">
+        <div class="overlay"></div>
+        <div class="contenido">
+            <div class="close-btn" onclick="togglePopup('popup-11')">&times;</div>
+            <h1 class="sub-title">Designed this personal website from scratch!</h1>
+            <h1 class="popup_subtitle">I used HTML and CSS!</h1>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!------------hobbies------------------>
+    <div id="hobbies">
+        <div class="container">
+            <h1 class="sub-title">Hobbies</h1>
+            <div class="hobbies-list">
+                <div class="hobby">
+                    <img src="images/photography.png">
+                    <div class="layer">
+                        <h3>Photography</h3>
+                        <p>Capturing moments with my Sony cam!</p>
+                        <p>Click to find more about it!</p>
+                        <a href="#hobbies"><i class="fa-solid fa-circle-plus" onclick="togglePopup('popup-12')"></i></a>
+                    </div>
+                </div>
+                <div class="hobby">
+                    <img src="images/jiu_jitsu.png">
+                    <div class="layer">
+                        <h3>Brazilian Jiu Jitsu</h3>
+                        <p>My favorite sport and hobby!</p>
+                        <p>Click to find more about it!</p>
+                        <a href="#hobbies"><i class="fa-solid fa-circle-plus" onclick="togglePopup('popup-13')"></i></a>
+                    </div>
+                </div>
+                <div class="hobby">
+                    <img src="images/santoslogo.jpg">
+                    <div class="layer">
+                        <h3>Soccer</h3>
+                        <p>I play soccer!</p>
+                        <p>Click to find more about it!</p>
+                        <a href="#hobbies"><i class="fa-solid fa-circle-plus" onclick="togglePopup('popup-14')"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--POPUPS FOR HOBBIES-->
+    <div class="popups" id="popup-12">
+        <div class="overlay"></div>
+        <div class="contenido">
+            <div class="close-btn" onclick="togglePopup('popup-12')">&times;</div>
+            <h1 class="sub-title">Photography!</h1>
+            <h1 class="popup_subtitle"></h1>
+            <p>
+                I have always found fascinating the capability of capturing moments in life through pictures.
+                I recently acquired a semi-professional camera (Sony alpha a6000) which I have been using ever
+                since.
+                Below are some samples of the pictures I have taken:
+                To see more of my journey as a photographer, please visit <a
+                    href="https://www.instagram.com/koalistic.photography/?hl=en">koalistic.photography</a> on
+                Instagram!
+            </p>
+            <h1 class="popup_subtitle">Quilotoa Lake, Cotopaxi Province, Ecuador</h1>
+            <p>Visiting a ~750 year old collapsed volcano 🌋 now known as the Quilotoa Lake! </p>
+            <img src="images/quilotoa.jpg">
+            <h1 class="popup_subtitle">Jambeli Island, Manabi Province, Ecuador</h1>
+            <p>Sunset view from the shores of Jambeli Island, located off the southern coast of Ecuador.</p>
+            <img src="images/jambeli.jpg">
+            <h1 class="popup_subtitle">Memorial Bridge, Rochester NY, USA</h1>
+            <p>View of the Frederick Douglass-Susan B. Anthony Memorial Bridge over the Genesee River in downtown
+                Rochester.</p>
+            <img src="images/rochester.jpg">
+
+        </div>
+    </div>
+
+    <div class="popups" id="popup-13">
+        <div class="overlay"></div>
+        <div class="contenido">
+            <div class="close-btn" onclick="togglePopup('popup-13')">&times;</div>
+            <h1 class="sub-title">Brazilian Jiu Jitsu!</h1>
+            <h1 class="popup_subtitle">My journey as a Brazilian Jiu Jitsu Fighter....</h1>
+            <p>
+                At the age of 16 I was on a quest of finding a sport that I would be truly passionate about.
+                After bouncing from sport to sport, including soccer, basketball, volleyball, track and field, etc.,
+                I found myself enrolling in a jiu jitsu gym and have continued practicing ever since!
+
+            </p>
+
+            <img src="images/dojobushido.jpg">
+            <h1 class="popup_subtitle">Accomplishments in Competitions:</h1>
+            <ul>
+                <li>
+                </li>
+                <li>
+                    1 Gold medal, 1 Silver medal at GoodFight Submission Only Tournament in Middlesex, PA. (August
+                    2020)
+                </li>
+                <li>
+                    2 Gold medals, 1 Silver medal at North American Grappling Association tournament in Wildwood,
+                    NJ.
+                    (August 2020)
+                </li>
+                <li>
+                    Silver Medal at Abu Dhabi trials - Canadian National Pro in Toronto, ON. (February 2020)
+                </li>
+                <li>
+                    EBI Superfight Winner and Fastest Submission of the night in Owego, NY. (November 2019)
+                </li>
+                <li>
+                    3 Gold medals, 1 Silver medal at North American Grappling Association tournament in Manalapan,
+                    NJ.
+                    (November 2019)
+                </li>
+                <li>
+                    2 Gold medals, 1 Silver medal, 1 Bronze medal at Grappling Industries in Buffalo, NY. (June
+                    2019)
+                </li>
+                <li>
+                    2 Gold medals at Buffalo Jiu Jitsu Open in Buffalo, NY. (May 2019)
+                </li>
+                <li>
+                    2 Silver medals, 1 Bronze medal at Ascension Jiu-Jitsu Championship in Toronto, ON. (February,
+                    2019)
+                </li>
+                <li>
+                    MMA Amateur debut winner by submission at Team Fere MMA Invitational in Riobamba, ECU. (June
+                    2018)
+                </li>
+                <li>
+                    1 Gold medal, 1 Bronze medal at Ecuadorian National Jiu Jitsu Championship in Cuenca, ECU.
+                    (December
+                    2017)
+                </li>
+                <h1 class="popup_subtitle">Ecuadorian National Jiu Jitsu Championship Podium (December 2017)</h1>
+                <img src="images/nationalpodium.jpg">
+                <h1 class="popup_subtitle">North American Grappling Championship Podium (November 2019)</h1>
+                <img src="images/NAGApodium.jpg">
+        </div>
+    </div>
+
+    <div class="popups" id="popup-14">
+        <div class="overlay"></div>
+        <div class="contenido">
+            <div class="close-btn" onclick="togglePopup('popup-14')">&times;</div>
+            <h1 class="sub-title">Soccer!</h1>
+            <h1 class="popup_subtitle">Begginings</h1>
+            <p>
+                Sports in general were always a main aspect of my life. My father was a huge
+                soccer fan, which is the sport I started with. I trained all my childhood and some of
+                my teenage years before I bounced to different sports.
+            </p>
+            <p>
+                Below is an image of an award ceremony after a kids tournament back in 2004 (I was 4 years old at
+                the
+                time)
+            </p>
+            <img src="images/soccerkid.jpg">
+            <p>
+                I played in several teams during my life. The most recent team I played for was Cornell "Santos",
+                an undergraduate club team at Cornell. I played Fall 2022 season, unfortunately we did not qualify
+                to regionals, but it was a great experience and very fun!
+            </p>
+            <img src="images/santosfoto.jpg">
+
+
+        </div>
+    </div>
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> hft9@cornell.edu</p>
+                    <p><i class="fa-solid fa-phone"></i> 845-538-5507</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/henry-tenecela/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/henrytenecela/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/henry.tenecela.1"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="images/Henry_Tenecela_Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Henry Tenecela. Made with Easy Tutorials </p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var pop_ups = document.getElementsByClassName("popups");
+
+        function togglePopup(popupname) {
+            document.getElementById(popupname).classList.toggle("active");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzb64vAyc_qWQYaFS2z3grRAjheAP1iFq1LyiMXhZ1qjWO6sIqpFDk8QAtI21eCV_rk/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        ms.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
